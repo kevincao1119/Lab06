@@ -31,17 +31,17 @@ int main(int argc, char *argv[])
  perror("Error: Failed to Open w1_slave file");
  (void) exit(1);
  }
- n = fread(buf, 1, 100, fd);
+ n = fread(buf, 1, 100, fd);//eads data from the given stream fd into the array pointed to, by ptr--buf
  if(n == 0) {
  perror("Error: No Arguments Found");
  exit(1);
  }
  buf[n] = '\0';
- fprintf(stdout, "Read %s\n",buf+69);
- (void) fclose(fd);
+ fprintf(stdout, "Read %s\n",buf+69);//sends formatted output to a stream,printing output on the main output device for the session
+ (void) fclose(fd);//closes the stream. All buffers are flushed.
  temp = buf+69;
  printf("Temp: %s",temp);
- y = atof(temp);
+ y = atof(temp); //converts the string argument str to a floating-point number
  y=y/1000;
  printf("Integer Y: %.1f\n",y);
  if(first == 0){
