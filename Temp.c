@@ -20,9 +20,9 @@ int main(int argc, char *argv[])
  FILE *fd;
  int n, first, last;
  double y, high, low;
- char buf[101];
+ char buf[500];
  char *temp;
- char l[50], cur[50],h[50];
+ char l[100], cur[100],h[100];
  time_t start = time(NULL);
  int next = start+1;
  first =0;
