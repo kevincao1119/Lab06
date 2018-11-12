@@ -3,16 +3,6 @@
 #include <string.h>
 #include <time.h>
 #include "ifttt.h"
-#include <ctype.h>
-#include <fcntl.h>
-#include <malloc.h>
-#include <sys/stat.h>
-#include <sys/types.h>
-#include <time.h>
-#include <unistd.h>
-#define low "lowest temperature is "
-#define high "highest temperature is "
-#define nows "current temperature is "
 
 
 int main(int argc, char *argv[])
