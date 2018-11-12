@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
  int next = start+1;
  first =0;
  while(start < next){
- if((fd = fopen("/sys/bus/w1/devices/28-021312c431aa/w1_slave", "r")) == (FILE *)NULL) {
+ if((fd = fopen("/sys/bus/w1/devices/28-0023984300c5/w1_slave", "r")) == (FILE *)NULL) {
  perror("Error: Failed to Open w1_slave file");
  (void) exit(1);
  }
