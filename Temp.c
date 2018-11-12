@@ -40,7 +40,7 @@ int main(int argc, char *argv[])
 	sprintf(l,"Lowest Temp: %.1f C",low);
 	sprintf(cur,"Current Temp: %.1f C",y);
 	sprintf(h,"Highest Temp: %.1f C",high);
-	ifttt("https://maker.ifttt.com/trigger/666/with/key/dhiJR-IZGw4iy-XaJAqJSfy8ArgkPMFFGVC94n0Wrl4", l,cur, h);
+	ifttt("https://maker.ifttt.com/trigger/alarm_triggered/with/key/dhiJR-IZGw4iy-XaJAqJSfy8ArgkPMFFGVC94n0Wrl4", l,cur, h);
 	}
  else{
 	if(y <low){low = y;}
@@ -49,7 +49,7 @@ int main(int argc, char *argv[])
 	sprintf(l,"Lowest Temp: %.1f C",low);
 	sprintf(cur,"Current Temp: %.1f C",y);
 	sprintf(h,"Highest Temp: %.1f C",high);
-	ifttt("https://maker.ifttt.com/trigger/666/with/key/dhiJR-IZGw4iy-XaJAqJSfy8ArgkPMFFGVC94n0Wrl4", l,cur, h);
+	ifttt("https://maker.ifttt.com/trigger/alarm_triggered/with/key/dhiJR-IZGw4iy-XaJAqJSfy8ArgkPMFFGVC94n0Wrl4", l,cur, h);
 	last = y;
 	}
 	}
